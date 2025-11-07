@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Anirudh Choudhary — Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container">
+      <a class="brand" href="index.html">Anirudh Choudhary</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="internship.html">Internship</a></li>
+        <!-- <li><a href="research.html">Research</a></li> -->
+        <!-- <li><a href="contact.html">Contact</a></li> -->
+      </ul>
+    </div>
+  </nav>
+
+
+  <header class="hero fade-in">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>Hello — I'm <span class="accent">Anirudh</span></h1>
+        <p class="lead">Currently an undergraduate student pursuing a B.S. LL.B. degree from NLU Meg, which provides a comprehensive foundation in legal studies along with an introduction to various aspects of law in practice. My academic journey so far has given me exposure to legislative drafting, advocacy, and public policy, helping me understand how legal frameworks interact with governance and society.</p>
+        <p>
+          <a class="cta" href="assets/CV - AnirudhChoudhary.pdf" target="_blank">Download CV</a>
+
+          <a class="cta ghost social-link" 
+            href="https://www.linkedin.com/in/anirudh-choudhary-76a0a6287/" 
+            target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" 
+                width="18" height="18" viewBox="0 0 24 24" fill="currentColor"
+                style="vertical-align:middle;margin-right:6px;">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 
+                      5v14c0 2.761 2.239 5 5 5h14c2.761 
+                      0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 
+                      19h-3v-10h3v10zm-1.5-11.268c-.966 
+                      0-1.75-.79-1.75-1.764s.784-1.764 
+                      1.75-1.764 1.75.79 1.75 
+                      1.764-.784 1.764-1.75 
+                      1.764zm13.5 11.268h-3v-5.604c0-1.337-.026-3.063-1.868-3.063-1.871 
+                      0-2.159 1.46-2.159 2.968v5.699h-3v-10h2.881v1.367h.041c.401-.76 
+                      1.379-1.562 2.837-1.562 3.035 0 3.596 
+                      2.002 3.596 4.604v5.591z"/>
+            </svg>
+            LinkedIn
+          </a>
+        <p>
+
+      </div>
+      <div class="hero-photo">
+        <img src="assets/photo.jpg" alt="Anirudh Choudhary">
+      </div>
+    </div>
+  </header>
+
+  <!-- <main class="container main-grid fade-in">
+    <section class="card">
+      <h2>Featured Internship</h2>
+      <p>Worked on XYZ project improving automation and writing tests. Click below to read a concise summary of responsibilities, technologies and key outcomes.</p>
+      <p><a class="link-btn" href="internship.html">See Internship</a></p>
+    </section>
+
+    <section class="card">
+      <h2>Research & Blog</h2>
+      <p>Short guides, research notes and tutorials on ML, ASR, and web deployment. Updated regularly.</p>
+      <p><a class="link-btn" href="research.html">Explore Research</a></p>
+    </section>
+  </main> -->
+
+<main class="contact-section">
+  <div class="container">
+
+    <h1>Get in Touch</h1>
+    <p>If you'd like to get in touch, feel free to send a message below.</p>
+
+<form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">
+  <input type="hidden" name="form-name" value="contact">
+  <p style="display:none;">
+    <label>Don’t fill this out if you’re human: <input name="bot-field"></label>
+  </p>
+
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+
+  <button type="submit" class="cta">Send Message</button>
+</form>
+
+<div id="success-message" style="display:none; margin-top:10px; color:limegreen; font-weight:bold;">
+  ✅ Message sent successfully!
+</div>
+
+<script>
+  const form = document.querySelector('.contact-form');
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const formData = new FormData(form);
+    await fetch("/", { method: "POST", body: formData });
+    document.getElementById('success-message').style.display = 'block';
+    form.reset();
+  });
+</script>
+
+
+
+    <!-- Success message stays hidden by default -->
+    <div id="success-message" class="success-message">
+      ✅ Message Sent Successfully! I will get back to you soon.
+    </div>
+
+  </div>
+</main>
+
+
+  <footer class="footer">
+    <div class="container">
+            <a href="https://www.linkedin.com/in/anirudh-choudhary-76a0a6287/" target="_blank">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M4.98 3.5C4.98 4.88 3.88 
+          6 2.5 6S0 4.88 0 3.5 1.12 1 
+          2.5 1 4.98 2.12 4.98 3.5zM.5 
+          8h4V24h-4V8zm7.5 0h3.8v2.2h.1c.5-.9 
+          1.7-2.2 3.7-2.2 4 0 4.7 2.6 
+          4.7 6V24h-4v-8.3c0-2-.04-4.5-2.75-4.5-2.75 
+          0-3.17 2.15-3.17 4.36V24h-4V8z"/>
+        </svg>
+      </a>
+
+      <a href="https://wa.me/916367681854" target="_blank">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20.52 3.48A11.86 11.86 0 0012.07 
+          0C5.55 0 .24 5.3.24 11.82a11.8 11.8 0 001.65 
+          6.03L0 24l6.35-1.66a11.86 11.86 0 005.72 
+          1.46h.01c6.52 0 11.86-5.3 
+          11.86-11.82a11.8 11.8 0 00-3.42-8.5zm-8.45 
+          18.33h-.01a9.6 9.6 0 01-4.89-1.34l-.35-.21-3.77 
+          .99 1.01-3.67-.23-.38a9.45 9.45 0 01-1.46-5.1c0-5.31 
+          4.33-9.63 9.66-9.63a9.62 9.62 0 016.85 2.83 9.6 
+          9.6 0 012.84 6.83c0 5.31-4.33 9.63-9.65 
+          9.63zm5.54-7.16c-.3-.15-1.77-.88-2.04-.98-.27-.1-.47-.15-.66.15-.2.3-.76.98-.94 
+          1.18-.17.2-.35.23-.65.08-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.76-1.67-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.03-.53-.08-.15-.66-1.6-.9-2.21-.24-.58-.48-.5-.66-.51h-.57c-.2 
+          0-.52.08-.79.38-.27.3-1.04 1.02-1.04 2.5s1.07 
+          2.9 1.22 3.1c.15.2 2.11 3.23 5.11 4.53.72.31 
+          1.28.5 1.72.64.72.23 1.38.2 1.9.12.58-.09 
+          1.77-.72 2.02-1.41.25-.69.25-1.27.17-1.41-.07-.14-.27-.22-.57-.37z"/>
+        </svg>
+      </a>
+
+            <!-- Instagram -->
+      <a href="https://www.instagram.com/anirudhchoudhary305/" target="_blank">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M7 2C4.243 2 2 4.243 2 
+          7v10c0 2.757 2.243 5 5 
+          5h10c2.757 0 5-2.243 5-5V7c0-2.757-2.243-5-5-5H7zm10 
+          2c1.654 0 3 1.346 3 
+          3v10c0 1.654-1.346 3-3 
+          3H7c-1.654 0-3-1.346-3-3V7c0-1.654 1.346-3 
+          3-3h10zm-5 3a5 5 0 100 10 
+          5 5 0 000-10zm0 2a3 3 0 110 6 
+          3 3 0 010-6zm4.5-3a1.5 1.5 0 100 3 
+          1.5 1.5 0 000-3z"/>
+        </svg>
+      </a>
+
+      <p>© <span id="year"></span> Anirudh - 2025</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

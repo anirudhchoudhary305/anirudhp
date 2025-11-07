@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Research — Anirudh Choudhary</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container">
+      <a class="brand" href="index.html">Anirudh Choudhary</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="internship.html">Internship</a></li>
+        <li><a href="research.html" class="active">Research</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container content fade-in">
+    <h1>Research & Notes</h1>
+    <p>These documents update automatically whenever new files are added to my research Drive folder.</p>
+
+    <ul id="research-list" class="posts" style="margin-top: 28px;"></ul>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Anirudh Choudhary</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').innerText = new Date().getFullYear();
+  </script>
+
+  <script src="js/research.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Anirudh Choudhary</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="container">
+      <a class="brand" href="index.html">Anirudh Choudhary</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="internship.html">Internship</a></li>
+        <!-- <li><a href="research.html">Research & Blogs</a></li> -->
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container content">
+    <h1>Contact Me</h1>
+    <p>If you'd like to get in touch, feel free to send a message below.</p>
+
+    <form name="contact" method="POST" data-netlify="true" class="contact-form">
+      <input type="hidden" name="form-name" value="contact">
+      <label>Your Name</label>
+      <input type="text" name="name" required>
+
+      <label>Your Email</label>
+      <input type="email" name="email" required>
+
+      <label>Message</label>
+      <textarea name="message" rows="6" required></textarea>
+
+      <button type="submit" class="cta">Send Message</button>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p><a href="index.html">← Back to home</a></p>
+      <p>© <span id="yearC"></span> Anirudh Choudhary</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById('yearC').innerText = new Date().getFullYear()</script>
+</body>
+</html>
