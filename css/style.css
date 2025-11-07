@@ -275,35 +275,4 @@ body{
   color: #d1d5db;
 }
 
-.form-wrapper {
-  max-width: 700px; /* Increase form width here */
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100% !important;
-  padding: 14px;
-  font-size: 16px;
-  border-radius: 8px;
-  border: none;
-  background: #111728; /* match your theme */
-  color: white;
-}
-
-.contact-form textarea {
-  height: 180px; /* increase height */
-  resize: vertical; /* allow manual resize */
-}
-
-.contact-form button {
-  padding: 12px;
-  font-size: 17px;
-  border-radius: 8px;
-  cursor: pointer;
-}
 
