@@ -78,12 +78,37 @@
     <h1>Get in Touch</h1>
     <p>If you'd like to get in touch, feel free to send a message below.</p>
 
-<form action="https://formspree.io/f/xanlrrnn" method="POST">
-  <input type="text" name="name" placeholder="Your Name" required>
-  <input type="email" name="email" placeholder="Your Email" required>
-  <textarea name="message" placeholder="Your Message" required></textarea>
-  <button type="submit">Send</button>
+<form id="contact-form" action="https://formspree.io/f/xanlrrnn" method="POST" class="contact-form">
+  <div style="display: flex; flex-direction: column; gap: 12px; max-width: 400px; margin: 0 auto;">
+    <input type="text" name="name" placeholder="Your Name" required style="padding: 10px; border-radius: 5px; border: none; width: 100%;">
+    <input type="email" name="email" placeholder="Your Email" required style="padding: 10px; border-radius: 5px; border: none; width: 100%;">
+    <textarea name="message" rows="5" placeholder="Your Message" required style="padding: 10px; border-radius: 5px; border: none; width: 100%;"></textarea>
+    <button type="submit" class="cta" style="padding: 10px; border-radius: 5px; background-color: #fff; color: #000; border: none; cursor: pointer;">Send</button>
+  </div>
 </form>
+
+<script>
+document.getElementById("contact-form").addEventListener("submit", async function(e) {
+  e.preventDefault();
+  
+  const form = e.target;
+  const data = new FormData(form);
+  
+  const response = await fetch(form.action, {
+    method: form.method,
+    body: data,
+    headers: { 'Accept': 'application/json' }
+  });
+
+  if (response.ok) {
+    alert("✅ Message sent successfully!");
+    form.reset();
+  } else {
+    alert("❌ There was a problem sending your message. Please try again.");
+  }
+});
+</script>
+
 
 <form action="https://formspree.io/f/xanlrrnn" method="POST" class="contact-form">
   <input type="hidden" name="form-name" value="contact">
