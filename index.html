@@ -83,7 +83,7 @@
     <input type="text" name="name" placeholder="Your Name" required style="padding: 10px; border-radius: 5px; border: none; width: 100%;">
     <input type="email" name="email" placeholder="Your Email" required style="padding: 10px; border-radius: 5px; border: none; width: 100%;">
     <textarea name="message" rows="5" placeholder="Your Message" required style="padding: 10px; border-radius: 5px; border: none; width: 100%;"></textarea>
-    <button type="submit" class="cta" style="padding: 10px; border-radius: 5px; background-color: #fff; color: #000; border: none; cursor: pointer;">Send</button>
+    <button type="submit" class="cta" style="padding: 10px; border-radius: 5px; background-color: #fff; color: #000; border: none; cursor: pointer;">Send Message</button>
   </div>
 </form>
 
@@ -109,24 +109,6 @@ document.getElementById("contact-form").addEventListener("submit", async functio
 });
 </script>
 
-
-<form action="https://formspree.io/f/xanlrrnn" method="POST" class="contact-form">
-  <input type="hidden" name="form-name" value="contact">
-  <p style="display:none;">
-    <label>Don’t fill this out if you’re human: <input name="bot-field"></label>
-  </p>
-  
-  <input type="text" name="name" placeholder="Your Name" required>
-  <input type="email" name="email" placeholder="Your Email" required>
-  <textarea name="message" placeholder="Your Message" required></textarea>
-  <button type="submit" class="cta">Send Message</button>
-</form>
-
-
-<div id="success-message" style="display:none; margin-top:10px; color:limegreen; font-weight:bold;">
-  ✅ Message sent successfully!
-</div>
-
 <script>
   const form = document.querySelector('.contact-form');
   form.addEventListener('submit', async (e) => {
@@ -137,8 +119,6 @@ document.getElementById("contact-form").addEventListener("submit", async functio
     form.reset();
   });
 </script>
-
-
 
     <!-- Success message stays hidden by default -->
     <div id="success-message" class="success-message">
